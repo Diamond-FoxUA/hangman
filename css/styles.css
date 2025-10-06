@@ -1,0 +1,63 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #212121;
+}
+
+.greet-form {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-top: 30vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+
+  /* delete this  */
+  background-color: rgba(240, 248, 255, .5);
+}
+
+.greet-form .form-label {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.greet-form .container {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  align-items: center;
+  width: 330px;
+}
+
+.greet-form .form-input {
+  font-size: 18px;
+  font-weight: 400;
+
+  border: 1px solid #212121;
+  border-radius: 16px;
+
+  width: 300px;
+  padding: 8px;
+}
+
+.greet-form .form-btn {
+  display: block;
+  width: 150px;
+  padding: 8px;
+
+  font-size: 20px;
+  font-weight: 500;
+
+  border: 1px solid #212121;
+  border-radius: 16px;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
