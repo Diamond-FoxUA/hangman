@@ -10,25 +10,31 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css" />
     <script type="module" src="./js/main.js"></script>
   </head>
   <body>
-    <form class="greet-form">
-      <label class="form-label" for="username">Hello! Enter your name, please.</label>
+    <form class="greet-form" style="display: none">
+      <label class="form-label" for="username"
+        >Hello! Enter your name, please.</label
+      >
       <div class="container">
-        <input class="form-input" id="username" type="text">
+        <input class="form-input" id="username" type="text" />
         <button class="form-btn" type="submit">Start game!</button>
-      </div>     
+      </div>
     </form>
-    <span class="word" hidden>word</span>
-    <form class="guess-form">
-      <label for="guess"></label>
-      <input id="guess" type="text">
-      <button class="form-btn" type="submit">Enter</button>
-    </form>
-    <span class="message">message</span>
-    <span class="used-letters">Guessed letters: A B C</span>
-    <span class="tries-left">Tries left: 6</span>
+    <div class="game-container">
+      <span class="word">word</span>
+      <span class="message">Hello, username!</span>
+      <form class="guess-form">
+        <label class="guess-label" for="guess"></label>
+        <input class="form-input" id="guess" type="text" />
+        <button class="form-btn" type="submit">Enter</button>
+      </form>
+      <div class="user-status">
+        <span class="tries-left">Tries left: 6</span>
+        <span class="used-letters">Guessed letters: A B C</span>
+      </div>
+    </div>
   </body>
 </html>
